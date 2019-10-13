@@ -1,4 +1,5 @@
 <template>
+  <div>
     <div class="header-box">
       <div class="left-icon">
         <span v-if="showback" @click="back" class="icon-back"></span>
@@ -13,6 +14,8 @@
         <span v-if="showmore" class="icon"></span>
       </div>
     </div>
+    <div style="width: 10rem;height:1.2rem;"></div>
+  </div>
 </template>
 
 <script>
@@ -62,9 +65,9 @@ export default {
 @import "~styles/index.less";
 @import "~styles/variable.less";
 .header-box{
-  // position: fixed;
-  // top: 0;
-  // left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   .h(100);
   .lh(100);

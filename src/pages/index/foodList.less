@@ -1,0 +1,187 @@
+.mint-swipe {
+  height: 5rem;
+  color: #fff;
+  text-align: center;
+}
+.mint-swipe-item {
+  line-height: 5.5rem;
+  img {
+    width: 10rem;
+    height: 5.5rem;
+  }
+}
+.food-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 0.1rem;
+  list-style: none;
+
+  .food-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+    background: #fefefe;
+    border: 1px solid #f4f6f2;
+
+    img {
+      width: 4rem;
+      height: 2.5rem;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border-radius: 8px;
+      padding: 0.3rem 0;
+    }
+    &-right {
+      width: 5rem;
+      height: 2.5rem;
+      padding-top: 0.4rem;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      .title {
+        margin: 0.1rem;
+        padding: 0.1rem;
+      }
+      .detail {
+        margin: 0 0.1rem;
+        padding: 0 0.1rem;
+        height: 1rem;
+        font-size: 11px;
+        overflow: hidden;
+      }
+      .price {
+        color: #cc352f;
+        margin: 0 0.1rem;
+        padding: 0.1rem;
+      }
+    }
+  }
+}
+.showLoading {
+   padding-top: 0.5rem;
+   background: #f4f6f2;
+   padding-bottom: 1.3rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   line-height: 35px;
+ }
+.cart {
+  width: 1.2rem;
+  height: 1.2rem;
+  padding: 0.15rem;
+  background: #fefefe;
+  position: fixed;
+  bottom: 3rem;
+  right: 0.2rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #dadada;
+  box-shadow: 4px 4px 3px #dedede;
+}
+.badge {
+  background: #fefefe;
+  position: fixed;
+  bottom: 4.2rem;
+  right: 0.2rem;
+  z-index: 100;
+  border: 1px solid #dadada;
+  box-shadow: 4px 4px 3px #dedede;
+}
+.pay-panel {
+  position: fixed;
+  bottom: 0;
+  width: 10rem;
+  left: 0;
+  z-index: 200;
+  background: #f0f0f0;
+
+  .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    background: #ffcc00;
+    color: #343131;
+
+    h2 {
+      margin-left: 0.5rem;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 0.7rem;
+    }
+
+    img {
+      width: 0.7rem;
+      height: 0.7rem;
+      margin: 0.35rem 0.1rem 0.35rem 1.2rem;
+    }
+
+    .close {
+      width: 0.6rem;
+      height: 0.6rem;
+      margin-left: 4rem;
+    }
+  }
+  .foodSelected {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    background: #f7f7f7;
+    margin-bottom: 1px;
+
+    .title {
+      width: 4.5rem;
+      text-align: left;
+      margin: 0 1rem 0 1rem;
+      line-height: 1.2rem;
+    }
+
+    .price {
+      width: 1.2rem;
+      text-align: left;
+      font-size: 14px;
+      color: #cc352f;
+    }
+
+    .num {
+      color: #343131;
+      margin: 0.4rem 0;
+      font-size: 14px;
+    }
+
+    img {
+      width: 0.5rem;
+      height: 0.5rem;
+      margin: 0.38rem 0.2rem;
+    }
+  }
+  .bottom {
+    border-top: 1px solid #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #fefefe;
+
+    h2 {
+      margin: 0.3rem 0;
+      margin-left: 2rem;
+      text-align: left;
+      width: 4rem;
+      color: #cc352f;
+    }
+
+    .pay-button {
+      width: 2rem;
+      color: #343131;
+      background: #ffcc00;
+      padding: 0.3rem 0;
+      font-size: 18px;
+    }
+  }
+}

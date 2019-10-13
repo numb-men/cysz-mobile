@@ -3,15 +3,19 @@
 /*eslint-disable*/
 import Vue from 'vue'
 import App from './App'
+import { requests } from './request/requests'
 import Vuex from 'vuex'
 import store from './store'
 import router from './router'
 import Mint from 'mint-ui'
+import { Indicator } from 'mint-ui'
 import 'mint-ui/lib/style.css'
 import FastClick from 'fastclick'
+import manage from "@/manage"
 import '../static/js/flexible.js'
+
 if (process.env.MOCK) {    // 判断是否为mock模式
-  require('./mock/index.js')
+  // require('./mock/index.js')
 }
 /**
 *监听浏览器点击返回前进操作动画
@@ -55,10 +59,13 @@ window.addEventListener('popstate', function(e) {
 
 Vue.use(Mint)
 Vue.use(Vuex)
+Vue.prototype.$requests = requests
+Vue.prototype.$manage = manage
+
 Vue.config.productionTip = false
 FastClick.attach(document.body)
 
-new Vue({
+export let vm = new Vue({
   el: '#app',
   router,
   store,

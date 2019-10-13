@@ -21,20 +21,16 @@ export default {
     return {
       navList: [
         {
-          'path': '/home',
-          'name': '推荐'
+          'path': '/foodList',
+          'name': '菜单'
         },
         {
-          'path': '/story',
-          'name': '故事'
+          'path': '/orderList',
+          'name': '订单'
         },
         {
-          'path': '/footprints',
-          'name': '足迹'
-        },
-        {
-          'path': '/day',
-          'name': '纪念日'
+          'path': '/user',
+          'name': '我的'
         }
       ]
     }
@@ -90,32 +86,26 @@ export default {
           background-size: cover;
         }
         .tab-0 {
-          background-image: url("../assets/imgs/index-noselect.svg");
+          background-image: url("../assets/imgs/barbecue-noselect.svg");
         }
         .tab-1 {
-          background-image: url("../assets/imgs/note-noselect.svg");
+          background-image: url("../assets/imgs/order-noselect.svg");
         }
         .tab-2 {
-          background-image: url("../assets/imgs/print-noselect.svg");
-        }
-        .tab-3 {
-          background-image: url("../assets/imgs/dy-noselect.svg");
+          background-image: url("../assets/imgs/user-noselect.svg");
         }
         &:hover {
           text-decoration: none;
         }
         &.router-link-active.active {
           .tab-0 {
-            background-image: url("../assets/imgs/index-select.svg");
+            background-image: url("../assets/imgs/barbecue-select.svg");
           }
           .tab-1 {
-            background-image: url("../assets/imgs/note-select.svg");
+            background-image: url("../assets/imgs/order-select.svg");
           }
           .tab-2 {
-            background-image: url("../assets/imgs/print-select.svg");
-          }
-          .tab-3 {
-            background-image: url("../assets/imgs/dy-select.svg");
+            background-image: url("../assets/imgs/user-select.svg");
           }
         }
       }
