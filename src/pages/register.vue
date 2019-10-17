@@ -8,6 +8,8 @@
       <hr style="width: 95%;">
       <mt-field label="密码" v-model="password" placeholder="请输入密码" type="password"></mt-field>
       <hr style="width: 95%;">
+      <mt-field label="确认密码" v-model="checkPassword" placeholder="请确认密码" type="password"></mt-field>
+      <hr style="width: 95%;">
       <!-- 验证码 -->
       <mt-field label="验证码" v-model="code" >
         <img alt :src="imgUrl" style="width: 3rem;" @click="initSecurityCode">
@@ -30,6 +32,7 @@ export default {
       username: '',
       mobile: '',
       password: '',
+      checkPassword: '',
       imgUrl: '',
       code: '',
       captchaToken: '',
@@ -50,6 +53,10 @@ export default {
       }
       if (this.password.length === 0) {
         Toast('请填写密码')
+        return false
+      }
+      if (this.checkPassword.length === 0) {
+        Toast('请填写确认密码')
         return false
       }
       if (this.code.length === 0) {
@@ -76,6 +83,12 @@ export default {
       }
       if (this.code.length !== 4) {
         Toast('验证码应为4位')
+        return false
+      }
+      if (this.password !== this.checkPassword) {
+        Toast('两次密码输入不一致，请重新输入')
+        this.password = ''
+        this.checkPassword = ''
         return false
       }
       return true

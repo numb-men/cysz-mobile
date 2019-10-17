@@ -15,7 +15,7 @@ let serverObj = {
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
-    port: 10001, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    port: 10002, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: true,
     errorOverlay: true,
     notifyOnErrors: true,

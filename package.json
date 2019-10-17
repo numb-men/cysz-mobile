@@ -1,8 +1,8 @@
 {
-  "name": "myproject",
+  "name": "humor_mobile",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "MrKaKaluote <gaosongai@foxmail.com>",
+  "author": "le@hengyumo.cn MrKaKaluote <gaosongai@foxmail.com>",
   "private": true,
   "scripts": {
     "dev": "cross-env DEV_ENV=local NODE_ENV=development webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",

@@ -2,7 +2,7 @@
   <div id="login" class="login">
     <h1>登录</h1>
     <div class="login-form">
-      <mt-field label="手机号" v-model="mobile" placeholder="请输入手机号"></mt-field>
+      <mt-field class="no-bg" label="手机号" v-model="mobile" placeholder="请输入手机号"></mt-field>
       <hr style="width: 95%;">
       <mt-field label="密码" v-model="password" placeholder="请输入密码" type="password"></mt-field>
       <hr style="width: 95%;">
